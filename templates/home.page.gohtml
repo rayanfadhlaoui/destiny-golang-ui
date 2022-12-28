@@ -1,0 +1,14 @@
+{{template "base" .}}
+
+{{define "content" }}
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <h1 class="align-content-center">Welcome to destiny</h1>
+                <p>Hello my friends, how's it going</p>
+                <p>This has been uploaded</p>
+                <p>Your name is {{index .StringMap "name"}}</p>
+            </div>
+        </div>
+    </div>
+{{end}}
