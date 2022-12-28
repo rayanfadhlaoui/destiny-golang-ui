@@ -1,10 +1,9 @@
 package render
 
 import (
-	"destiny-go-ui/pkg/models"
 	"fmt"
+	"github.com/rayanfadhlaoui/destiny-golang-ui/pkg/models"
 	"html/template"
-	"log"
 	"net/http"
 )
 
@@ -14,10 +13,8 @@ func AddDefaultData(td *models.TemplateData) *models.TemplateData {
 
 func (t *TemplateInformation) Render(w http.ResponseWriter, templateName string, td *models.TemplateData) {
 	if t.useCache {
-		log.Println("using cache")
 		executeTemplate(w, t.tc[templateName], td)
 	} else {
-		log.Println("not using cache")
 		renderWithoutCache(w, templateName, t.partials, td)
 	}
 }

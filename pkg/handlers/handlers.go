@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"destiny-go-ui/pkg/models"
-	"destiny-go-ui/pkg/render"
+	"github.com/rayanfadhlaoui/destiny-golang-ui/pkg/models"
+	"github.com/rayanfadhlaoui/destiny-golang-ui/pkg/render"
 	"net/http"
 )
 

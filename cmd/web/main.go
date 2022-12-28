@@ -1,7 +1,7 @@
 package main
 
 import (
-	"destiny-go-ui/pkg/handlers"
+	"github.com/rayanfadhlaoui/destiny-golang-ui/pkg/handlers"
 	"log"
 	"net/http"
 )
